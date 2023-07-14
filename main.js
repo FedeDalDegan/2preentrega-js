@@ -67,7 +67,7 @@ function login() {
         return verificarCredenciales(user, pass, email);
     } else {
         alert("Ingrese un usuario y contraseña válidos");
-        return login();
+        return login(); // En caso de no verificar datos, se vuelve a pedir al usuario que los vuelva a ingresar.
     }
 }
 
